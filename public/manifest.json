@@ -1,0 +1,12 @@
+{
+  "manifest_version": 2,
+  "name": "My DApp Chrome Extension",
+  "version": "1.0",
+  "description": "A DApp integrated with Chrome Extension",
+  "browser_action": {
+    "default_popup": "index.html"
+  },
+  "permissions": [
+    "activeTab"
+  ]
+}
