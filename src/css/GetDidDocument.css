@@ -1,0 +1,81 @@
+.form-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: left;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+    font-size: 16px;
+}
+
+.form-input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.form-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    margin-bottom: 10px;
+}
+
+.form-button:hover {
+    background-color: #0056b3;
+}
+
+.result-data {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    max-height: 300px; /* 设置最大高度 */
+    overflow: auto; /* 启用滚动条 */
+    text-align: left; /* 内容左对齐 */
+}
+
+.result-data h3 {
+    margin-top: 0;
+    font-size: 18px;
+    text-align: left; /* 标题左对齐 */
+}
+
+.result-data pre {
+    margin: 5px 0;
+    font-size: 16px;
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+    white-space: pre-wrap; /* 自动换行 */
+    word-wrap: break-word; /* 自动换行 */
+    text-align: left; /* 内容左对齐 */
+}

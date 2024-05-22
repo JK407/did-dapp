@@ -1,0 +1,73 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+    width: 100%;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-input, .form-select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+    font-size: 16px;
+}
+
+.form-input:focus, .form-select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.form-select {
+    appearance: none;
+    background: url('data:image/svg+xml;utf8,<svg fill="%23333" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>') no-repeat right 10px center;
+    background-color: white;
+    background-size: 12px;
+}
+
+
+.result-data {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    max-height: 300px; /* 设置最大高度 */
+    overflow: auto; /* 启用滚动条 */
+    text-align: left; /* 内容左对齐 */
+}
+
+.result-data h3 {
+    margin-top: 0;
+    font-size: 18px;
+    text-align: left; /* 标题左对齐 */
+}
+
+.result-data pre {
+    margin: 5px 0;
+    font-size: 16px;
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+    white-space: pre-wrap; /* 自动换行 */
+    word-wrap: break-word; /* 自动换行 */
+    text-align: left; /* 内容左对齐 */
+}
+
+
+
+
