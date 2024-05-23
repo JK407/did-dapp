@@ -14,13 +14,17 @@ function VerifyVc({ onBackClick }) {
         setResponseData(null);
 
         try {
+
+            // 去除转义字符
+            const cleanedJson = vcJson.replace(/\\n/g, '').replace(/\\"/g, '"').replace(/\\'/g, "'");
+            console.log(cleanedJson);
             // 发送请求到后端
             const response = await fetch('http://127.0.0.1:8888/vc/verify', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                body: JSON.stringify({ vc_json: vcJson }),
+                body: JSON.stringify({ vc_json: cleanedJson }),
             });
 
             const result = await response.json();

@@ -60,9 +60,12 @@ function App() {
 
   return (
       <div className="App">
+        <header className="App-header">
+          <h1>Did去中心化身份系统</h1>
+        </header>
         <div className="form-container">
           {!activeComponent && (
-              <>
+              <div className="button-container">
                 <button onClick={handleGetDidDocumentClick} className="form-button">GetDidDocument</button>
                 <button onClick={handleRegisterClick} className="form-button">NewAccount</button>
                 <button onClick={handleGetVcTemplateListClick} className="form-button">GetVcTemplateList</button>
@@ -73,8 +76,7 @@ function App() {
                 <button onClick={handleVerifyVcClick} className="form-button">VerifyVc</button>
                 <button onClick={handleGenerateVPClick} className="form-button">GenerateVP</button>
                 <button onClick={handleVerifyVpClick} className="form-button">VerifyVp</button>
-
-              </>
+              </div>
           )}
           {activeComponent === 'Register' && <Register onBackClick={handleBackClick} />}
           {activeComponent === 'GetDidDocument' && <GetDidDocument onBackClick={handleBackClick} />}

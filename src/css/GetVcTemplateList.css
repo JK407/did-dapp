@@ -31,6 +31,35 @@
     background-color: #45a049;
 }
 
+.result-data {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #333; /* 背景颜色改为黑色 */
+    color: black; /* 文字颜色改为白色 */
+    max-height: 300px; /* 设置最大高度 */
+    overflow: auto; /* 启用滚动条 */
+    text-align: left; /* 内容左对齐 */
+}
+
+.result-data h3 {
+    margin-top: 0;
+    font-size: 18px;
+    text-align: left; /* 标题左对齐 */
+}
+
+.result-data pre {
+    margin: 5px 0;
+    font-size: 16px;
+    background-color: #444; /* 更深的背景颜色 */
+    padding: 10px;
+    border-radius: 5px;
+    white-space: pre-wrap; /* 自动换行 */
+    word-wrap: break-word; /* 自动换行 */
+    text-align: left; /* 内容左对齐 */
+}
+
 .error-message {
     color: red;
 }
@@ -39,6 +68,4 @@
     color: green;
 }
 
-.result-data {
-    margin-top: 20px;
-}
+

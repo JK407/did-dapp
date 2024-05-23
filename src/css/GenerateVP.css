@@ -54,6 +54,7 @@
 
 .result-data {
     margin-top: 20px;
+    color: black; /* 文字颜色改为白色 */
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
